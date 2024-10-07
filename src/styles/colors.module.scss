@@ -1,11 +1,13 @@
 $color-primary: #263342;
 $color-primary-light: #4b6079;
 $color-primary-lighter: #889eb9;
-// $color-primary: rgb(44, 44, 44);
 $color-secondary: #f1efe7;
 
 $color-font: $color-primary;
 $color-font-light: $color-secondary;
 
 $color-background-dark: $color-primary;
-// $color-background-dark: rgb(126, 124, 124);
+
+//features
+$color-banner-button-color: $color-primary;
+$color-banner-button-background: $color-secondary;

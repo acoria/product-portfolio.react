@@ -1,7 +1,20 @@
 @use '../../styles/colors.module.scss';
 
 .banner {
+    display: flex;
+    flex-direction: column;
     color: colors.$color-font-light;
     background-color: colors.$color-background-dark;
     box-shadow: 5px 5px 50px colors.$color-background-dark;
+}
+
+.contactButton {
+    margin-bottom: 1rem;
+    color: colors.$color-banner-button-color;
+    background-color: colors.$color-banner-button-background;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    font-weight: 800;
+    align-self: center;
 }
