@@ -1,6 +1,7 @@
 import { Footer } from "../components/footer/Footer";
 import { ImageContent } from "../components/imageContent/ImageContent";
 import { FightingSportsCrmBanner } from "../features/banner/FightingSportsCrmBanner";
+import { Toolbar } from "../features/toolbar/Toolbar";
 import { DesignScheme } from "../types/DesignScheme";
 import { ImagePosition } from "../types/ImagePosition";
 import styles from "./PortfolioPage.module.scss";
@@ -8,7 +9,10 @@ import styles from "./PortfolioPage.module.scss";
 export const PortfolioPage: React.FC = () => {
   return (
     <div className={styles.portfolioPage}>
-      <FightingSportsCrmBanner />
+      <div>
+        <Toolbar product={"Kampfsport CRM"} />
+        <FightingSportsCrmBanner />
+      </div>
       <div>
         <ImageContent
           imageUrl="./assets/screenshots/yeoljeong_main_page.png"

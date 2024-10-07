@@ -1,0 +1,22 @@
+@use '../../styles/colors.module.scss';
+
+.language {
+    color: colors.$color-font-light;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    color: colors.$color-font-light;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    &:hover {
+        font-weight: 800;
+    }
+}
+
+.button.selected {
+    font-weight: 800;
+    cursor: auto;
+}

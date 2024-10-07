@@ -1,4 +1,8 @@
 {
     "imprint": "Impressum",
+    "languageAbbreviations": {
+        "de": "DE",
+        "en": "EN"
+    },
     "privacyPolicy": "Datenschutzerklärung"
 }

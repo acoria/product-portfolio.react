@@ -1,0 +1,14 @@
+@use '../../styles/colors.module.scss';
+
+.toolbar {
+    display: flex;
+    flex-direction: row;
+    background-color: colors.$color-background-dark;
+    color: colors.$color-font-light;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.productTitle {
+    margin: 0 0.5rem;
+}
