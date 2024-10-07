@@ -1,42 +1,65 @@
 @use '../../styles/colors.module.scss';
+@use '../../styles/mixins.scss';
 
 .fightingSportsCrmBanner {
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-items: end;
     row-gap: 1rem;
     padding-top: 2rem;
     padding-right: 1rem;
+
+    @include mixins.medium-screen {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
 }
 
 .backgroundImage {
     color: colors.$color-primary-light;
-    width: 3rem;
+    width: 1.5rem;
     height: auto;
     border: 2px solid;
     padding: 0.5rem;
-    border-radius: 20px
+    border-radius: 10px;
+
+    @include mixins.medium-screen {
+        width: 3rem;
+        border-radius: 20px;
+    }
 }
 
 .backgroundImage1 {
     @extend .backgroundImage;
     position: relative;
-    top: -1.5rem;
+    top: -1rem;
+
+    @include mixins.medium-screen {
+        top: -1.5rem;
+    }
 }
 
 .backgroundImage2 {
     @extend .backgroundImage;
     position: relative;
-    top: -3rem;
+    top: -1.5rem;
+
+    @include mixins.medium-screen {
+        top: -3rem;
+    }
 }
 
 .backgroundImage3 {
     @extend .backgroundImage;
     position: relative;
-    right: 1rem;
+    top: 2rem;
+
+    @include mixins.medium-screen {
+        right: 1rem;
+    }
 }
 
 .backgroundImage4 {
@@ -47,11 +70,20 @@
 .backgroundImage5 {
     @extend .backgroundImage;
     justify-self: center;
-    position: relative;
-    top: 2rem;
+
+    @include mixins.medium-screen {
+        position: relative;
+        top: 2rem;
+    }
 }
 
 .backgroundImage6 {
     @extend .backgroundImage;
     justify-self: center;
+    position: relative;
+    top: -1rem;
+
+    @include mixins.medium-screen {
+        position: static;
+    }
 }

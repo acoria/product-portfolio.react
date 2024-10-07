@@ -1,0 +1,11 @@
+@use '../../styles/mixins.scss';
+
+.title {
+    font-size: medium;
+
+    @include mixins.medium-screen {
+        font-size: x-large;
+    }
+}
+
+.description {}
