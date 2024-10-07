@@ -1,0 +1,69 @@
+@use '../../styles/colors.module.scss';
+
+.banner {
+    color: colors.$color-font-light;
+    background-color: colors.$color-background-dark;
+    box-shadow: 5px 5px 50px colors.$color-background-dark;
+}
+
+.productTitle {
+    // color: colors.$color-primary-lighter;
+    margin-left: 1rem;
+}
+
+.bannerBackground {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: end;
+    row-gap: 1rem;
+    padding-top: 2rem;
+    padding-right: 1rem;
+}
+
+
+.backgroundImage {
+    color: colors.$color-primary-light;
+    width: 3rem;
+    height: auto;
+    border: 2px solid;
+    padding: 0.5rem;
+    border-radius: 20px
+}
+
+.backgroundImage1 {
+    @extend .backgroundImage;
+    position: relative;
+    top: -1.5rem;
+}
+
+.backgroundImage2 {
+    @extend .backgroundImage;
+    position: relative;
+    top: -3rem;
+}
+
+.backgroundImage3 {
+    @extend .backgroundImage;
+    position: relative;
+    right: 1rem;
+}
+
+.backgroundImage4 {
+    @extend .backgroundImage;
+    justify-self: center;
+}
+
+.backgroundImage5 {
+    @extend .backgroundImage;
+    justify-self: center;
+    position: relative;
+    top: 2rem;
+}
+
+.backgroundImage6 {
+    @extend .backgroundImage;
+    justify-self: center;
+}
