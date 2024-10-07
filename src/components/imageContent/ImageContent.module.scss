@@ -1,0 +1,46 @@
+@use '../../styles/mixins.scss';
+@use '../../styles/colors.module.scss';
+
+.imageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mixins.medium-screen {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 8rem 15rem;
+    }
+
+}
+
+.image {
+    width: 80%;
+
+    @include mixins.medium-screen {
+        width: 40rem;
+        height: auto;
+    }
+}
+
+.imageExceedContent {
+    position: relative;
+    top: -14rem;
+}
+
+.imagePositionRight {
+
+    @include mixins.medium-screen {
+        flex-direction: row-reverse;
+    }
+
+}
+
+.lightMode {
+    color: colors.$color-font;
+}
+
+.darkMode {
+    background-color: colors.$color-background-dark;
+    color: colors.$color-secondary;
+}

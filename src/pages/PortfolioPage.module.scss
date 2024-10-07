@@ -1,0 +1,12 @@
+@use '../styles/dimensions.module.scss' as dimens;
+@use '../styles/mixins.scss';
+
+.portfolioPage {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    @include mixins.medium-screen {
+
+    }
+}

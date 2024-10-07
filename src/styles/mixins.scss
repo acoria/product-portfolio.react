@@ -1,0 +1,19 @@
+// @use './colors.module.scss';
+@use './dimensions.module.scss' as dimens;
+
+@mixin medium-screen($mediumScreenWidth: dimens.$medium-screen-width) {
+  @media (min-width: $mediumScreenWidth) {
+    @content;
+  }
+}
+
+@mixin large-screen($largeScreenWidth: dimens.$large-screen-width) {
+  @media (min-width: $largeScreenWidth) {
+    @content;
+  }
+}
+
+// @mixin glassy($color: colors.$color-glassy-background) {
+//   background-color: transparentize($color, 0.8);
+//   backdrop-filter: blur(4px);
+// }

@@ -1,0 +1,10 @@
+// components
+$medium-screen-width-number: 38;
+$large-screen-width-number: 70;
+$medium-screen-width: $medium-screen-width-number+rem;
+$large-screen-width: $large-screen-width-number+rem;
+
+:export {
+    largeScreenWidth: $large-screen-width-number;
+    mediumScreenWidth: $medium-screen-width-number;
+}
